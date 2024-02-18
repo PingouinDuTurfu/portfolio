@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: Motion-Bold;
-    src: url("../assets/font/Motion-Bold.ttf");
+    src: url("../assets/font/motion-bold-webfont.woff2");
 }
 
 @media screen and (max-width: 1200px) {

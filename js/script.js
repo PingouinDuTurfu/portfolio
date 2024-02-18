@@ -4,15 +4,21 @@ const headerHeight = getComputedStyle(document.documentElement)
     .replace('px', '');
 const loader = document.querySelector('.loader');
 const header = document.querySelector('header');
+let isStarted = false;
 
 pages.push(document.querySelector('.inner-presentation-container'));
 pages.push(document.querySelector('.inner-skills-container'));
 pages.push(document.querySelector('.inner-techno-container'));
 
 window.addEventListener('scroll', function() {
+    if (!isStarted)
+        return;
+
     for (let i = 0; i < pages.length; i++) {
         const page = pages[i];
         const position = page.getBoundingClientRect();
+
+        console.log('scroll')
 
         if (position.top < window.innerHeight && position.bottom >= 0)
             page.classList.add('active');
@@ -33,6 +39,7 @@ document.querySelectorAll('.github-image-element').forEach((element) => {
 
 document.addEventListener('readystatechange', function() {
     setTimeout(() => {
+        isStarted = true;
         loader.classList.remove('active');
         pages[0].classList.add('active');
         header.classList.add('active');

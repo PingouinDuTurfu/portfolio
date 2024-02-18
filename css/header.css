@@ -14,7 +14,10 @@ header > * img {
 
 header .logo {
     margin-left: 10%;
-    /*margin-right: calc(80px + 20px);*/
+}
+
+header .logo img {
+    margin-top: -3px;
 }
 
 header  .right {
@@ -33,8 +36,8 @@ header .title {
 }
 
 header .inner-title {
-    margin-top: -4px;
-    font-family: Asteroid-Regular, serif;
+    margin-top: -10px;
+    font-family: Motion-Bold, sans-serif;
     font-size: 80px;
     color: var(--white);
 }

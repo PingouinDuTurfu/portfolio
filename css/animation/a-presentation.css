@@ -3,7 +3,7 @@
     animation: slide-right-presentation 1s ease-in-out forwards;
 }
 
-main .inner-presentation-container .presentation-text:not(:has(.active)) {
+main .inner-presentation-container:not(:has(.active)) .presentation-text {
     transform: translateX(-70vw);
 }
 
@@ -12,7 +12,7 @@ main .inner-presentation-container .presentation-text:not(:has(.active)) {
     animation: slide-left-presentation 1s ease-in-out forwards;
 }
 
-main .inner-presentation-container .presentation-image:not(:has(.active)) {
+main .inner-presentation-container:not(:has(.active)) .presentation-image {
     transform: translateX(50vw);
 }
 
