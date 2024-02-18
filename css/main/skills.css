@@ -1,0 +1,66 @@
+main .skills-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    margin: var(--margin-between-sections) 0;
+    overflow: hidden;
+}
+
+main .inner-skills-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+main .skills-container .skills-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+main .inner-skills-container .skill-item {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+main .inner-skills-container .skill-item:nth-child(1n) {
+    align-self: flex-end;
+}
+
+main .inner-skills-container .skill-item:nth-child(2n) {
+    align-self: flex-start;
+}
+
+
+main .inner-skills-container .background-skills {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+}
+
+main .inner-skills-container .background-skills img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    main .inner-skills-container .background-skills {
+        top: 500px;
+        width: 400%;
+        left: -2200px;
+    }
+
+    main .inner-skills-container .skill-item {
+        width: 100%;
+    }
+}

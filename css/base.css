@@ -1,0 +1,43 @@
+:root {
+    --white: #ffffff;
+    --black: #292929;
+    --dark-black: #191919;
+    --light-blue: #4752c4;
+    --blue: #3c45a5;
+    --orange: #f8c555;
+    --dark-green: #4f9d70;
+    --green : #1cb55d;
+    --light-green: #ceff98;
+    --grey: #777777;
+    --dark-grey: #424242;
+    --red: #BD1616;
+    --light-red: #FF2626;
+    --pink: #8f5da3;
+    --light-pink: #FFE6E6;
+
+    --header-height: 100px;
+    --margin-between-sections: 100px;
+
+    --footer-height: 100px;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("/assets/font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Asteroid-Regular;
+    src: url("/assets/font/Asteroid-Regular.otf");
+}
+
+@font-face {
+    font-family: Motion-Bold;
+    src: url("/assets/font/Motion-Bold.ttf");
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --header-height: 150px;
+    }
+}

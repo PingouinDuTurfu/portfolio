@@ -1,0 +1,77 @@
+main .presentation-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    margin-bottom: var(--margin-between-sections);
+
+    overflow: hidden;
+}
+
+main .inner-presentation-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+main .inner-presentation-container .presentation-text {
+    padding-left: 5%;
+    width: 60%;
+}
+
+main .inner-presentation-container .presentation-image {
+    width: 35%;
+}
+
+main .inner-presentation-container .presentation-image img {
+    width: 100%;
+    max-width: 55vh;
+}
+
+main .inner-presentation-container .presentation-text .enhance {
+    font-size: 4.5vw;
+    color: var(--green);
+}
+
+main .inner-presentation-container .presentation-image .musical-notes {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1200px) {
+    main h1,
+    main .inner-presentation-container .presentation-text .enhance {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    main h2 {
+        font-size: 4vw;
+        text-align: justify;
+    }
+
+    main .inner-presentation-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main .inner-presentation-container .presentation-text {
+        width: 100%;
+        padding: 5% 20%;
+    }
+
+    main .inner-presentation-container .presentation-image {
+        height: 40%;
+        width: auto;
+    }
+
+    main .inner-presentation-container .presentation-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

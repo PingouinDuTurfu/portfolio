@@ -1,0 +1,76 @@
+.active .a-presentation-text-slide-right {
+    transform: translateX(-70vw);
+    animation: slide-right-presentation 1s ease-in-out forwards;
+}
+
+main .inner-presentation-container .presentation-text:not(:has(.active)) {
+    transform: translateX(-70vw);
+}
+
+.active .a-presentation-image-slide-left {
+    transform: translateX(50vw);
+    animation: slide-left-presentation 1s ease-in-out forwards;
+}
+
+main .inner-presentation-container .presentation-image:not(:has(.active)) {
+    transform: translateX(50vw);
+}
+
+@keyframes slide-right-presentation {
+    0% {
+        transform: translateX(-70vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left-presentation {
+    0% {
+        transform: translateX(50vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+main .inner-presentation-container .presentation-image .musical-notes .note {
+    display: none;
+    position: absolute;
+    font-size: 5vw;
+    color: var(--green);
+    animation: notes 2.5s infinite linear;
+}
+
+main .inner-presentation-container .presentation-image:has(img:hover) .musical-notes .note {
+    display: block;
+}
+
+main .inner-presentation-container .presentation-image .musical-notes .note:nth-child(1) {
+    animation: notes 2s infinite linear;
+    left: 30px;
+}
+
+main .inner-presentation-container .presentation-image .musical-notes .note:nth-child(2) {
+    animation: notes 1.5s infinite linear;
+    left: 60px;
+}
+
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+        transform: scale(1) translate(50%, -50%);
+    }
+    66% {
+        opacity: 1;
+        transform: scale(1.5) translate(0%, -100%);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) translate(50%, -150%);
+    }
+}

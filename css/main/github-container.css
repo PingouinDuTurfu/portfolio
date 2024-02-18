@@ -1,0 +1,101 @@
+main .github-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    margin: var(--margin-between-sections) 0;
+}
+
+main .inner-github-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .github-container .github-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+main .github-container .github-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+main .github-container .github-item:nth-child(even) {
+    flex-direction: row;
+}
+
+main .github-container .github-item .github-image {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+main .github-container .github-item .github-content {
+    width: 40%;
+}
+
+main .github-container .github-item .github-content .title {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin: 20px 0;
+}
+
+main .github-container .github-item:nth-child(even) .github-content .title {
+    justify-content: flex-end;
+}
+
+main .github-container .github-item .github-content .title h1 {
+    font-size: 4vw;
+    margin: 0;
+    color: var(--green);
+}
+
+main .github-container .github-item .github-content .title img {
+    margin: 0 15px;
+    padding-bottom: 0.6vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+main .github-container .github-item:nth-child(even) .github-content .title h1 {
+    text-align: end;
+}
+
+main .github-container .github-item .github-content p {
+    font-size: 2vw;
+}
+
+main .github-container .github-item .github-image img {
+    max-width: 100%;
+    max-height: 50vh;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: transform .5s ease-in-out;
+    background-color: var(--dark-black);
+    box-shadow: 0 60px 123px -25px hsla(225,2%,62%,.42), 0 35px 75px -35px hsla(225,2%,62%,.08);
+}
+
+main .github-container .github-item:nth-child(even) .github-image img {
+    transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
+}
+
+main .github-container .github-item:nth-child(odd) .github-image img {
+    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+}
+
+main .github-container .github-item:nth-child(even) .github-image img:hover {
+    transform: perspective(800px) rotateY(0deg) scale(1.4) rotateX(0deg) translateZ(0) translateX(-24.5%) translateY(0);
+    z-index: 1;
+}
+
+main .github-container .github-item:nth-child(odd) .github-image img:hover {
+    transform: perspective(800px) rotateY(0deg) scale(1.4) rotateX(0deg) translateZ(0) translateX(24.5%) translateY(0);
+    z-index: 1;
+}

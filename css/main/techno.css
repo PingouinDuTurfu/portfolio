@@ -1,0 +1,80 @@
+main .techno-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    margin: var(--margin-between-sections) 0;
+
+    overflow: hidden;
+}
+
+main .inner-techno-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+main .inner-techno-container h1 {
+    padding: 25px;
+}
+
+main .inner-techno-container .techno-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    height: fit-content;
+}
+
+main .inner-techno-container .techno-item {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+main .inner-techno-container .techno-item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+main .inner-techno-container .background-techno {
+    position: absolute;
+    width: 90%;
+    z-index: -1;
+}
+
+main .inner-techno-container .background-techno img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main .inner-techno-container .background-techno {
+        top: -130px;
+        width: 400%;
+    }
+
+    main .inner-techno-container .techno-item {
+        height: auto;
+        width: calc(50% - 10px * 2);
+        box-sizing: border-box;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+
+    main .inner-techno-container .techno-item img {
+        max-width: none;
+        max-height: none;
+    }
+}

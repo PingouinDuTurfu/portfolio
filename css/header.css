@@ -1,0 +1,40 @@
+header .header-img-container {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    background-color: var(--black);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+header > * img {
+    width: 100%;
+    height: 100%;
+}
+
+header .logo {
+    margin-left: 10%;
+    /*margin-right: calc(80px + 20px);*/
+}
+
+header  .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10%;
+    width: calc(80px * 2 + 20px);
+}
+
+header .title {
+    background-color: var(--black);
+    padding: 2px 30px;
+    border-radius: 15px;
+    height: 80px;
+}
+
+header .inner-title {
+    margin-top: -4px;
+    font-family: Asteroid-Regular, serif;
+    font-size: 80px;
+    color: var(--white);
+}

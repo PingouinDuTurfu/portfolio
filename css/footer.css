@@ -1,0 +1,23 @@
+footer .footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3.5vw;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+footer .footer-item img {
+    height: 80%;
+}
+
+footer .linkedin {
+    background-color: #2867b2;
+}
+
+footer .github {
+    background-color: #211f1f;
+    font-family: sans-serif grot
+}

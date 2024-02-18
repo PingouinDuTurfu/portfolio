@@ -1,0 +1,16 @@
+header.active {
+    animation: slide-down 1s ease-in-out forwards;
+}
+
+header:not(.active) {
+    transform: translateY(calc(var(--header-height) * -1));
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(calc(var(--header-height) * -1));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

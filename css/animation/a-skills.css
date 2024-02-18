@@ -1,0 +1,27 @@
+.active .skill-item:nth-child(1n) {
+    transform: translateX(-100vw);
+    animation: slide-right-skills 1s ease-in-out forwards;
+}
+
+.active .skill-item:nth-child(2n) {
+    transform: translateX(100vw);
+    animation: slide-left-skills 1s ease-in-out forwards;
+}
+
+@keyframes slide-right-skills {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left-skills {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
