@@ -23,17 +23,17 @@
 
 @font-face {
     font-family: Montserrat-Regular;
-    src: url("/assets/font/Montserrat-Regular.ttf");
+    src: url("../assets/font/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: Asteroid-Regular;
-    src: url("/assets/font/Asteroid-Regular.otf");
+    src: url("../assets/font/Asteroid-Regular.otf");
 }
 
 @font-face {
     font-family: Motion-Bold;
-    src: url("/assets/font/Motion-Bold.ttf");
+    src: url("../assets/font/Motion-Bold.ttf");
 }
 
 @media screen and (max-width: 1200px) {
