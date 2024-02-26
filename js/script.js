@@ -25,7 +25,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.querySelectorAll('.github-image-element').forEach((element) => {
+document.querySelectorAll('.github-image-inner').forEach((element) => {
     element.addEventListener('mouseover', function(event) {
         const parentElementPosition = event.target.parentElement.getBoundingClientRect();
         window.scroll({
