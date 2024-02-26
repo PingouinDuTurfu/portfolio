@@ -18,8 +18,6 @@ window.addEventListener('scroll', function() {
         const page = pages[i];
         const position = page.getBoundingClientRect();
 
-        console.log('scroll')
-
         if (position.top < window.innerHeight && position.bottom >= 0)
             page.classList.add('active');
         else
