@@ -3,11 +3,13 @@
 @import "header.css";
 @import "footer.css";
 
+@import "main/title.css";
 @import "main/presentation.css";
 @import "main/techno.css";
 @import "main/skills.css";
 @import "main/github-container.css";
 
+@import "animation/a-title.css";
 @import "animation/a-header.css";
 @import "animation/a-presentation.css";
 @import "animation/a-techno.css";

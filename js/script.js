@@ -10,6 +10,10 @@ pages.push(document.querySelector('.inner-presentation-container'));
 pages.push(document.querySelector('.inner-skills-container'));
 pages.push(document.querySelector('.inner-techno-container'));
 
+document.querySelectorAll('.inner-text-title').forEach((element) => {
+    pages.push(element);
+});
+
 window.addEventListener('scroll', function() {
     if (!isStarted)
         return;

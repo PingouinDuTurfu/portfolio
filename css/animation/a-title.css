@@ -1,0 +1,13 @@
+.active.inner-text-title {
+    animation: flow-title 2s ease-in-out;
+}
+
+@keyframes flow-title {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
+        transform: rotateX(0deg);
+    }
+}

@@ -17,10 +17,6 @@ main .inner-techno-container {
     width: 90%;
 }
 
-main .inner-techno-container h1 {
-    padding: 25px;
-}
-
 main .inner-techno-container .techno-item-list {
     display: flex;
     flex-wrap: wrap;
@@ -33,8 +29,8 @@ main .inner-techno-container .techno-item-list {
 main .inner-techno-container .techno-item {
     display: flex;
     justify-content: center;
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     padding: 10px;
     margin: 10px;
     background-color: var(--white);
@@ -47,23 +43,11 @@ main .inner-techno-container .techno-item img {
     border-radius: 15px;
 }
 
-main .inner-techno-container .background-techno {
-    position: absolute;
-    width: 90%;
-    z-index: -1;
-}
-
-main .inner-techno-container .background-techno img {
-    width: 100%;
-    height: 100%;
-}
-
-
 @media screen and (max-width: 1200px) {
-    main .inner-techno-container .background-techno {
-        top: -130px;
-        width: 400%;
-    }
+    /*main .inner-techno-container .background-techno {*/
+    /*    top: -130px;*/
+    /*    width: 400%;*/
+    /*}*/
 
     main .inner-techno-container .techno-item {
         height: auto;
