@@ -2,6 +2,7 @@
 @import "loader.css";
 @import "header.css";
 @import "footer.css";
+@import "modal.css";
 
 @import "main/title.css";
 @import "main/presentation.css";
@@ -15,7 +16,7 @@
 @import "animation/a-techno.css";
 @import "animation/a-skills.css";
 
-html,body{
+html,body {
     margin:0;
 }
 

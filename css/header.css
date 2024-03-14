@@ -33,6 +33,15 @@ header .title {
     padding: 2px 30px;
     border-radius: 15px;
     height: 80px;
+    overflow: hidden;
+    text-align: center;
+}
+
+header .title .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .inner-title {

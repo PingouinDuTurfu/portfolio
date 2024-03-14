@@ -30,12 +30,13 @@
     background-color: var(--black);
     border: var(--white) 2px solid;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .title-for-container .text-title .inner-text-title {
     font-size: 7vw;
     font-family: Motion-Bold, sans-serif;
-    background: linear-gradient(90deg, var(--green) 0%, var(--green) 33%, var(--black) 66%, var(--black) 100%);
+    background: linear-gradient(90deg, var(--white) 0%, var(--white) 33%, var(--black) 66%, var(--black) 100%);
     background-size: 300%;
     background-clip: text;
     -webkit-background-clip: text;

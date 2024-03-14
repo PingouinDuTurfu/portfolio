@@ -27,6 +27,10 @@ window.addEventListener('scroll', function() {
         else
             page.classList.remove('active');
     }
+
+    const title = document.querySelector('.title-container');
+    title.style.transform = `translateY(${- Math.min(title.getBoundingClientRect().height / 2, window.scrollY / 5)}px)`;
+
 });
 
 document.querySelectorAll('.github-image-inner').forEach((element) => {
@@ -37,6 +41,10 @@ document.querySelectorAll('.github-image-inner').forEach((element) => {
             behavior: 'smooth'
         })
     });
+});
+
+document.querySelector('#mail-button').addEventListener('click', function() {
+    document.querySelector('#modal').classList.toggle('active');
 });
 
 document.addEventListener('readystatechange', function() {
