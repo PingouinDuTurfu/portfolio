@@ -47,6 +47,10 @@ document.querySelector('#mail-button').addEventListener('click', function() {
     document.querySelector('#modal').classList.toggle('active');
 });
 
+document.querySelector('#modal-close').addEventListener('click', function() {
+    document.querySelector('#modal').classList.remove('active');
+});
+
 document.addEventListener('readystatechange', function() {
     setTimeout(() => {
         isStarted = true;
