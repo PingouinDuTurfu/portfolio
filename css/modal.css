@@ -59,3 +59,15 @@ html:has(.modal.active) {
     color: var(--green);
     font-size: 1.1em;
 }
+
+@media screen and (max-width: 1200px) {
+    .modal-content {
+        width: 90%;
+        height: 30%;
+        margin: 5%;
+    }
+
+    .modal-text {
+        font-size: 4em;
+    }
+}
