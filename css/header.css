@@ -1,7 +1,7 @@
 header .header-img-container {
     width: 80px;
     height: 80px;
-    padding: 2px;
+    padding: 5px;
     background-color: var(--black);
     border-radius: 15px;
     box-sizing: border-box;
@@ -17,15 +17,11 @@ header .logo {
 }
 
 header .logo img {
-    margin-top: -3px;
+    border-radius: 15px;
 }
 
 header  .right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-right: 10%;
-    width: calc(80px * 2 + 20px);
 }
 
 header .title {
