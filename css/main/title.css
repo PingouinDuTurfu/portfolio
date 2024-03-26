@@ -42,3 +42,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 1200px) {
+    .title-for-container .background {
+        overflow: hidden;
+    }
+
+    .title-for-container .background img {
+        transform: rotate(90deg) translate(0, 0px);
+        width: 200%;
+    }
+}
