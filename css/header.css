@@ -5,6 +5,7 @@ header .header-img-container {
     background-color: var(--black);
     border-radius: 15px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 header > * img {
@@ -20,7 +21,7 @@ header .logo img {
     border-radius: 15px;
 }
 
-header  .right {
+header .right {
     margin-right: 10%;
 }
 
