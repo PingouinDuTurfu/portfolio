@@ -8,6 +8,6 @@ COPY package.json .
 
 RUN npm install
 
-COPY ./ /usr/local/app/
+COPY . .
 
 CMD ["node", "server.js"]
