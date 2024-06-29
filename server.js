@@ -4,10 +4,6 @@ const app = express();
 
 app.use('/portfolio', express.static(path.join(__dirname, 'public')));
 
-app.get('/portfolio', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
