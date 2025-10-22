@@ -20,6 +20,9 @@
     padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .experience-item {
@@ -29,14 +32,7 @@
     width: calc(50% - 10px);
     background-color: var(--black);
     border-radius: 20px;
-}
-
-.experience-item:first-child {
-    margin: 0 10px 0 0;
-}
-
-.experience-item:last-child {
-    margin: 0 0 0 10px;
+    justify-content: space-between;
 }
 
 .experience-item .experience-title {

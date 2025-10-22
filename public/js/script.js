@@ -27,9 +27,6 @@ window.addEventListener('scroll', function() {
         else
             page.classList.remove('active');
     }
-
-    // const title = document.querySelector('.title-container');
-    // title.style.transform = `translateY(${- Math.min(title.getBoundingClientRect().height / 2, Math.max(window.scrollY / 5 - document, 0))}px)`;
 });
 
 document.querySelectorAll('.github-image-inner').forEach((element) => {
